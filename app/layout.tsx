@@ -1,0 +1,2 @@
+import './globals.css';import Link from 'next/link';
+export default function RootLayout({children}:{children:React.ReactNode}){return <><header className="nav"><Link href="/" className="brand">SoHelpSocial</Link><Link href="/dashboard" className="muted">Dashboard</Link></header>{children}<div className="notice">After sharing your details, please change your passcode soon and review your account security and recovery settings.</div></>}
