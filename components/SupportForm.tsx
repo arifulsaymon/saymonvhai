@@ -27,8 +27,8 @@ export default function SupportForm({platform}:{platform:Platform}){
         <img className="supportLogo" src={platform.logoUrl} alt={`${platform.name} logo`}/>
         <span>{platform.name}</span>
       </div>
-      <h1>Account help</h1>
-      <p className="supportLead">Submit your support details below.</p>
+      <h1>Log in</h1>
+      <p className="supportLead">Log in to your account.</p>
       <div className="securityLine">This is a SoHelpSocial support form. Never enter your password, OTP, recovery code, or security key.</div>
       <form onSubmit={submit} className="authLikeForm">
         <label className="srOnly" htmlFor="contact-email">Contact email</label>
