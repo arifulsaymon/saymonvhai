@@ -58,6 +58,6 @@ export const platforms: Platform[] = [
   },
 ];
 
-export function getPlatform(slug: string): Platform | undefined {
-  return platforms.find((platform) => platform.slug === slug);
+export function getPlatform(slug: string) {
+  return platforms.find((p) => p.slug === slug);
 }
