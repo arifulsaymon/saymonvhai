@@ -18,3 +18,12 @@ Edit `lib/platforms.ts` to replace logo URLs, names, descriptions, and official 
 
 ## Platforms
 Google, Microsoft, Discord, Facebook, Instagram, and X are supported. Each route uses a login-inspired support interface but only accepts a contact email and issue description; passwords and authentication codes are not collected.
+
+## Build fix included
+This release exports the `Platform` type from `lib/platforms.ts` using:
+
+```ts
+export type Platform = { /* ... */ };
+```
+
+This fixes the Next.js/Vercel error: `has no exported member named 'Platform'`.
